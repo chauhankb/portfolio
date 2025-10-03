@@ -6,8 +6,8 @@ import HugeiconsUniversity from '@/assets/icons/HugeiconsUniversity';
 import * as motion from 'motion/react-client';
 
 const aboutText = `
-Hi, I’m Ayush Dhamecha, a passionate and detail-oriented MERN Stack Developer with expertise in building dynamic, responsive, and user-friendly web applications. 
-Proficient in React, Node.js, Express, MongoDB, and Mongoose, I specialize in crafting seamless full-stack solutions. My skill set also includes modern 
+Hi, I’m Ayush Dhamecha, a passionate and detail-oriented Full Stack Developer with expertise in building dynamic, responsive, and user-friendly web applications. 
+Proficient in React, Node.js, Express, MongoDB, and Mongoose,AWS. I specialize in crafting seamless full-stack solutions. My skill set also includes modern 
 front-end technologies like Tailwind CSS, JavaScript, HTML, and CSS, ensuring visually appealing and efficient designs. With a strong foundation in Linux and a 
 commitment to clean, maintainable code, I thrive on solving complex problems and delivering high-quality digital experiences. Let’s build something amazing together!
 `;
@@ -71,7 +71,7 @@ const AboutSection = () => {
                         </div>
                     </div>
                     <div className="max-mobile-lg:mt-2">
-                        <span>2026 - present</span>
+                        <span>2022 - 2026</span>
                     </div>
                 </motion.div>
             </div>

@@ -7,6 +7,7 @@ import projectImage2 from '@/assets/images/projects/2.png';
 import projectImage3 from '@/assets/images/projects/3.png';
 import projectImage4 from '@/assets/images/projects/4.png';
 import projectImage5 from '@/assets/images/projects/5.png';
+import threat from '@/assets/images/projects/threat.png';
 import { StaticImageData } from 'next/image'; // Correct type for static images
 
 // Define the type for a project
@@ -24,18 +25,18 @@ interface Project {
 
 // Array of projects
 const projects: Project[] = [
-    {
-        id: 1,
-        title: 'QueriDoc - Chat with Your Documents',
-        description:
-            'QueriDoc is a simple and powerful tool that lets you upload a PDF, get a quick summary, and ask questions about it. It uses AI to help you understand documents faster and easier.',
-        image: projectImage1, // Replace with your actual imported image reference
-        color: 'bg-muted', // Or another Tailwind class that fits your design
-        logo: linux, // Replace with your relevant logo/icon
-        techUsed: ['Python', 'Streamlit', 'LangChain', 'HuggingFace API', 'PyPDF2'],
-        demoLink: '', // Replace with actual deployment link
-        codeLink: 'https://github.com/AyushDhamecha/QueriDoc', // Replace with your actual GitHub repo link
-    }, 
+    // {
+    //     id: 1,
+    //     title: 'QueriDoc - Chat with Your Documents',
+    //     description:
+    //         'QueriDoc is a simple and powerful tool that lets you upload a PDF, get a quick summary, and ask questions about it. It uses AI to help you understand documents faster and easier.',
+    //     image: projectImage1, // Replace with your actual imported image reference
+    //     color: 'bg-muted', // Or another Tailwind class that fits your design
+    //     logo: linux, // Replace with your relevant logo/icon
+    //     techUsed: ['Python', 'Streamlit', 'LangChain', 'HuggingFace API', 'PyPDF2'],
+    //     demoLink: '', // Replace with actual deployment link
+    //     codeLink: 'https://github.com/AyushDhamecha/QueriDoc', // Replace with your actual GitHub repo link
+    // }, 
     {
         id: 2,
         title: 'SortVisualiser - Sorting Algorithm Visualizer',
@@ -57,7 +58,7 @@ const projects: Project[] = [
         color: 'bg-card',
         logo: linux, // Replace with actual logo/image identifier if available
         techUsed: ['Next.js', 'Javascript', 'Tailwind CSS', 'Gemini 2.0', 'LocalStorage', 'ffmpeg.js'],
-        demoLink: 'https://hiringbuddy-1.onrender.com/', // Add your actual demo link
+        demoLink: 'https://hiring-buddy.vercel.app/', // Add your actual demo link
         codeLink: 'https://github.com/AyushDhamecha/Hiring-Buddy' // Add your GitHub repo link
     },
 
@@ -70,9 +71,31 @@ const projects: Project[] = [
         color: 'bg-card',
         logo: linux,
         techUsed: ['React js', 'Node Js', 'Mongodb', 'Express js'],
-        demoLink: '',
+        demoLink: 'https://insight-hub-zeta.vercel.app/',
         codeLink: '',
     },
+
+    {
+        id: 6,
+        title: "ThreatShield - Analyze. Detect. Protect. in Real Time.",
+        description: "ThreatShield is a multimodal AI threat detection platform that analyzes text, audio, and image inputs using Groq-powered inference. It delivers real-time threat summaries, severity scores, and visual insights securely inside the browser, ensuring privacy-first monitoring for education, law enforcement, enterprises, and online platforms.",
+        image: threat,
+        color: "bg-card",
+        logo: linux,
+        techUsed: [
+            "Next.js",
+            "React.js",
+            "Tailwind CSS",
+            "TypeScript",
+            "Recharts",
+            "Chart.js",
+            "Node.js",
+            "Groq API"
+        ],
+        demoLink: "https://threat-detection-dashboard.vercel.app/",
+        codeLink: ""
+    }
+    
 ];
 
 const ProjectSection: React.FC = () => {

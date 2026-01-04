@@ -62,7 +62,7 @@ const HeroSection: React.FC = () => {
                                     fill="transparent"
                                     className="text-primary stroke-primary stroke-[5px] opacity-10"
                                 >
-                                    Ayush
+                                    Krishna
                                 </text>
                             </svg>
                         </div>
@@ -91,7 +91,7 @@ const HeroSection: React.FC = () => {
 
                         <TextReveal className={'bg-primary'}>
                             <h1 className="text-6xl font-bold relative text-primary">
-                                Ayush Dhamecha
+                                Krishna Chauhan
                             </h1>
                         </TextReveal>
 
@@ -99,17 +99,18 @@ const HeroSection: React.FC = () => {
                             <TypingEffect
                                 staticText={"I'm a"}
                                 words={[
-                                    'Web Developer',
-                                    'MERN Stack Developer',
-                                    'Frontend Enthusiast',
-                                    'Problem Solver',
+                                     'Aspiring Software Engineer',
+                                     'Java Developer',
+                                    'Data Analytics Enthusiast',
+                                    'Machine Learning Beginner',
                                 ]}
                             />
                         </TextReveal>
 
                         <TextReveal className={'bg-muted-foreground'}>
-                            I specialize in building high-performance web applications with modern
-                            JavaScript technologies like React, Node.js, and MongoDB.
+                            I am a Computer Science undergraduate focused on software development,
+                            data analytics, and building real-world projects for placements.
+
                         </TextReveal>
 
                         <div className="my-3">
@@ -142,7 +143,7 @@ const HeroSection: React.FC = () => {
                             >
                                 {/* <Image
                                     src={heroImage}
-                                    alt="Ayush Dhamecha"
+                                    alt="Krishna"
                                     priority
                                     className="w-[90%] drop-shadow-[2px_-2px_2px_rgba(0,0,0,1)]"
                                     width={500}

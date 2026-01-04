@@ -186,7 +186,7 @@ export const EmailTemplate: React.FC<EmailTemplateProps> = ({ name }) => {
                 />
               </a>
               <a
-                href="https://github.com/AyushDhamecha"
+                href="https://github.com/chauhankb"
                 target="_blank"
                 rel="noopener noreferrer"
               >

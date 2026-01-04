@@ -22,8 +22,8 @@ const oxanium = Oxanium({
 });
 
 export const metadata = {
-    title: 'Ayush Dhamecha',
-    description: 'Ayush Dhamecha - Portfolio',
+    title: 'Krishna Chauhan | Portfolio',
+    description: 'Computer Science Engineering Student | Software & Data Analytics',
 };
 
 // Define Props Type

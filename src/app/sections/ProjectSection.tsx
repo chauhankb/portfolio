@@ -2,120 +2,98 @@ import React from 'react';
 import Section from '@/components/HomePage/Section';
 import ParallaxStack from '@/components/HomePage/ParallaxStack';
 import linux from '@/assets/icons/skill/skill-icons--linux-light.svg';
+
 import projectImage1 from '@/assets/images/projects/1.png';
 import projectImage2 from '@/assets/images/projects/2.png';
 import projectImage3 from '@/assets/images/projects/3.png';
 import projectImage4 from '@/assets/images/projects/4.png';
-import projectImage5 from '@/assets/images/projects/5.png';
-import threat from '@/assets/images/projects/threat.png';
-import { StaticImageData } from 'next/image'; // Correct type for static images
 
-// Define the type for a project
+import { StaticImageData } from 'next/image';
+
+// Project type
 interface Project {
     id: number;
     title: string;
     description: string;
-    image: StaticImageData; // Use StaticImageData for imported images
+    image: StaticImageData;
     color: string;
-    logo: StaticImageData; // Use StaticImageData for imported logos
+    logo: StaticImageData;
     techUsed: string[];
     demoLink: string;
     codeLink: string;
 }
 
-// Array of projects
+// ✅ PROJECTS TAKEN STRICTLY FROM RESUME
 const projects: Project[] = [
-    // {
-    //     id: 1,
-    //     title: 'QueriDoc - Chat with Your Documents',
-    //     description:
-    //         'QueriDoc is a simple and powerful tool that lets you upload a PDF, get a quick summary, and ask questions about it. It uses AI to help you understand documents faster and easier.',
-    //     image: projectImage1, // Replace with your actual imported image reference
-    //     color: 'bg-muted', // Or another Tailwind class that fits your design
-    //     logo: linux, // Replace with your relevant logo/icon
-    //     techUsed: ['Python', 'Streamlit', 'LangChain', 'HuggingFace API', 'PyPDF2'],
-    //     demoLink: '', // Replace with actual deployment link
-    //     codeLink: 'https://github.com/AyushDhamecha/QueriDoc', // Replace with your actual GitHub repo link
-    // }, 
+    {
+        id: 1,
+        title: 'Student Analytics System',
+        description:
+            'A full-stack web application designed to track and analyze student attendance and academic performance. The system manages student records, attendance, and marks with backend logic implemented in Java and SQL, and a basic React frontend integrated using REST-style APIs.',
+        image: projectImage1,
+        color: 'bg-card',
+        logo: linux,
+        techUsed: ['Java', 'SQL', 'React', 'HTML', 'CSS', 'JavaScript'],
+        demoLink: 'https://drive.google.com/your-demo-pdf',
+        codeLink: 'https://github.com/chauhankb/student-analytics-system',
+    },
     {
         id: 2,
-        title: 'SortVisualiser - Sorting Algorithm Visualizer',
+        title: 'Solar Stable – Android Application',
         description:
-            'SortVisualiser is a web app that visually demonstrates how different sorting algorithms work. It helps users understand the step-by-step process of sorting through interactive animations and controls.',
+            'An Android application developed to monitor and calculate solar panel efficiency using real-time IoT sensor data. The app processes parameters such as voltage, current, irradiance, and temperature to compute power output and efficiency, and displays historical performance records.',
         image: projectImage2,
         color: 'bg-card',
         logo: linux,
-        techUsed: ['JavaScript', 'HTML', 'CSS'],
-        demoLink: 'https://ayushdhamecha.github.io/Sort-Visualiser/',
-        codeLink: 'https://github.com/AyushDhamecha/Sort-Visualiser'
-    },    
+        techUsed: ['Java', 'Android Studio', 'Embedded Systems', 'IoT'],
+        demoLink: 'https://drive.google.com/your-app-demo',
+        codeLink: 'https://github.com/chauhankb/solar-stable-android',
+
+    },
+    {
+        id: 3,
+        title: 'Tata Sales & Quants – Retail Sales Analytics',
+        description:
+            'A data analytics project completed as part of a Tata Group mini internship. Built an interactive Power BI dashboard to analyze retail revenue, sales trends, and country-wise performance, and performed customer segmentation using RFM analysis to derive business insights.',
+        image: projectImage3,
+        color: 'bg-card',
+        logo: linux,
+        techUsed: ['Power BI', 'Data Analytics', 'Excel'],
+        demoLink: 'https://app.powerbi.com/view?r=your-public-link',
+        codeLink: '',
+
+    },
     {
         id: 4,
-        title: 'Hiring Buddy-Agentic AI Hiring Assistant',
+        title: 'Gold Price Trend Analysis',
         description:
-            'An end-to-end AI-powered hiring assistant that streamlines the recruitment process by automating resume parsing, candidate scoring, communication, and scheduling. It supports multi-modal inputs like videos and code samples, offers real-time analytics, and ensures local data storage for privacy. ⚙️💼',
-        image: projectImage3, // Replace with actual image import/URL
-        color: 'bg-card',
-        logo: linux, // Replace with actual logo/image identifier if available
-        techUsed: ['Next.js', 'Javascript', 'Tailwind CSS', 'Gemini 2.0', 'LocalStorage', 'ffmpeg.js'],
-        demoLink: 'https://hiring-buddy.vercel.app/', // Add your actual demo link
-        codeLink: 'https://github.com/AyushDhamecha/Hiring-Buddy' // Add your GitHub repo link
-    },
-
-    {
-        id: 5,
-        title: 'InsightHub - Manage your Project at one place.',
-        description:
-            'Career Craft is a comprehensive career counseling platform that provides students and professionals with expert career advice, skill assessments, and personalized career roadmaps. It integrates an AI-driven recommendation system for better decision-making.',
-        image: projectImage5,
+            'A data analysis project that studies 20 years of historical gold price data to identify long-term trends, volatility, and price behavior. Performed exploratory data analysis using moving averages and visualizations to derive data-driven insights.',
+        image: projectImage4,
         color: 'bg-card',
         logo: linux,
-        techUsed: ['React js', 'Node Js', 'Mongodb', 'Express js'],
-        demoLink: 'https://insight-hub-zeta.vercel.app/',
-        codeLink: '',
-    },
+        techUsed: ['Python', 'Pandas', 'Matplotlib', 'Seaborn'],
+        demoLink: 'https://www.kaggle.com/your-notebook',
+        codeLink: 'https://github.com/chauhankb/gold-price-analysis',
 
-    {
-        id: 6,
-        title: "ThreatShield - Analyze. Detect. Protect. in Real Time.",
-        description: "ThreatShield is a multimodal AI threat detection platform that analyzes text, audio, and image inputs using Groq-powered inference. It delivers real-time threat summaries, severity scores, and visual insights securely inside the browser, ensuring privacy-first monitoring for education, law enforcement, enterprises, and online platforms.",
-        image: threat,
-        color: "bg-card",
-        logo: linux,
-        techUsed: [
-            "Next.js",
-            "React.js",
-            "Tailwind CSS",
-            "TypeScript",
-            "Recharts",
-            "Chart.js",
-            "Node.js",
-            "Groq API"
-        ],
-        demoLink: "https://threat-detection-dashboard.vercel.app/",
-        codeLink: ""
-    }
-    
+    },
 ];
 
 const ProjectSection: React.FC = () => {
     return (
         <div className="relative">
-            {/* Main Section */}
             <Section className={'py-10 relative'}>
                 <div className="flex flex-col justify-center text-center py-10 w-2/3 mx-auto max-mobile-lg:w-full z-10">
                     <h1>Projects</h1>
                     <p>
-                        Explore a collection of my projects that showcase my skills in web
-                        development, problem-solving, and creating user-friendly applications. Each
-                        project is built with modern technologies and designed to deliver a seamless
-                        user experience.
+                        A collection of academic, internship, and self-driven projects that
+                        demonstrate my skills in software development, data analytics, and
+                        problem-solving through practical, real-world applications.
                     </p>
                 </div>
 
                 {/* Parallax Stack */}
                 <div>
-                    <ParallaxStack projects={projects as Project[]} />
+                    <ParallaxStack projects={projects} />
                 </div>
 
                 {/* Gradient Blur Effect */}

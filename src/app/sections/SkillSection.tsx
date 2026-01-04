@@ -9,11 +9,12 @@ const SkillSection: React.FC = () => {
             <div className="text-center w-4/6 mx-auto max-tablet-lg:w-full">
                 <h1>What I Know</h1>
                 <p>
-                    I specialize in building modern, scalable, and user-friendly web applications.
-                    My expertise spans across frontend and backend development, with a strong focus
-                    on technologies like React, Node.js, and MongoDB. I am passionate about solving
-                    complex problems and delivering high-quality solutions.
+                    I am a Computer Science undergraduate with hands-on experience in programming,
+                     web development, and data analysis. I have worked with Java, Python, basic React,
+                     and data analysis libraries, and I enjoy building real-world projects while
+                    continuously improving my technical and problem-solving skills.
                 </p>
+
             </div>
             <div className="flex">
                 <div className="w-20 my-auto">

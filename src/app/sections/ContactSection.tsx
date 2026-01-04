@@ -4,7 +4,6 @@ import Section from '@/components/HomePage/Section';
 import HugeiconsMailOpen from '@/assets/icons/HugeiconsMailOpen';
 import SiPhoneDuotone from '@/assets/icons/SiPhoneDuotone';
 import AkarIconsLocation from '@/assets/icons/AkarIconsLocation';
-import MingcuteFacebookLine from '@/assets/icons/MingcuteFacebookLine';
 import JamLinkedinCircle from '@/assets/icons/JamLinkedinCircle';
 import RaphaelGithubalt from '@/assets/icons/RaphaelGithubalt';
 import contact from '@/assets/elements/contact.gif';
@@ -16,66 +15,56 @@ const ContactSection: React.FC = () => {
             <div className="text-center py-10 mobile-lg:w-9/12 mx-auto">
                 <h1>Contact</h1>
                 <p>
-                    Whether you have a project in mind, need a consultation, have a job offer or
-                    just want to connect, feel free to reach out. Let&apos;s build something amazing
-                    together!
+                    I am open to internship and placement opportunities, collaborations,
+                    and professional discussions. Feel free to reach out and connect.
                 </p>
             </div>
+
             <div className="flex gap-4 max-tablet-lg:flex-col">
+                
+                {/* Contact Info Card */}
                 <div className="basis-1/3 bg-card p-4 border border-border rounded-xl">
-                    <h1></h1>
                     <Image src={contact} alt="Contact" className="w-[50%] mx-auto" />
-                    <div className="flex flex-col gap-3">
+
+                    <div className="flex flex-col gap-3 mt-4">
                         <span className="flex items-center text-primary text-xl gap-2 font-bold">
                             <HugeiconsMailOpen />
                             <a
-                                href="mailto:ayushdhamecha02@gmail.com"
+                                href="mailto:chauhankb264@gmail.com"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="no-underline font-bold hover:text-primary/90 translate-y-1"
                             >
-                                ayushdhamecha02@gmail.com
+                                chauhankb264@gmail.com
                             </a>
                         </span>
+
                         <span className="flex items-center text-primary text-xl gap-2 font-bold">
                             <SiPhoneDuotone />
-                            <a
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="no-underline font-bold hover:text-primary/90 translate-y-1"
-                            >
-                                +91-8421938903
-                            </a>
+                            <span className="translate-y-1">
+                                +91-9518334295
+                            </span>
                         </span>
+
                         <span className="flex items-center text-primary text-xl gap-2 font-bold">
                             <AkarIconsLocation />
-                            <a
-                                href="#"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="no-underline font-bold hover:text-primary/90 translate-y-1"
-                            >
+                            <span className="translate-y-1">
                                 Nagpur, Maharashtra, India
-                            </a>
+                            </span>
                         </span>
                     </div>
+
+                    {/* Social Links */}
                     <div className="flex gap-3 text-4xl mt-4">
-                        {/* <a
-                            href="https://www.facebook.com/fiamanillah.b2/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <MingcuteFacebookLine />
-                        </a> */}
                         <a
-                            href="https://www.linkedin.com/in/ayush-dhamecha/"
+                            href="https://www.linkedin.com/in/chauhankb"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
                             <JamLinkedinCircle />
                         </a>
                         <a
-                            href="https://github.com/AyushDhamecha"
+                            href="https://github.com/chauhankb"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -83,6 +72,8 @@ const ContactSection: React.FC = () => {
                         </a>
                     </div>
                 </div>
+
+                {/* Contact Form */}
                 <div className="basis-2/3">
                     <ContactForm />
                 </div>

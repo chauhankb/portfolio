@@ -34,13 +34,13 @@ const Skills: React.FC = () => {
             { icon: PhFileJsBold, name: 'HTML' },
             { icon: PhFileJsBold, name: 'CSS' },
             { icon: PhFileJsBold, name: 'JavaScript' },
-            { icon: NoniconsReact16, name: 'React (Basics)' },
+            { icon: NoniconsReact16, name: 'React' },
         ],
         data_ml: [
             { icon: PhFileJsBold, name: 'Pandas' },
             { icon: PhFileJsBold, name: 'NumPy' },
             { icon: PhFileJsBold, name: 'Matplotlib' },
-            { icon: PhFileJsBold, name: 'Machine Learning (Basics)' },
+            { icon: PhFileJsBold, name: 'Machine Learning' },
             { icon: PhFileJsBold, name: 'NLP (Basics)' },
         ],
         tools: [
